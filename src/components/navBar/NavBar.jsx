@@ -2,13 +2,14 @@ import React from "react";
 
 import iconGithub from "../../assets/github.png"
 import iconLinkedin from  "../../assets/linkedin.png"
-import "../header/Header.css"
+import logo from "../../assets/settings.png"
+import "./NavBar.css"
 
 export default function Header () {
     return (
-        <div className="header">
+        <header className="header">
             <div className="header_logo">
-                <img src="" alt="logo"/>
+                <img src={logo} alt="logo"/>
             </div>
             <div className="header_search">
                 <input type="text" placeholder="Search..."/>
@@ -21,14 +22,12 @@ export default function Header () {
                 <a href="https://github.com/jhonatandzg" className="header_option">
         <img src={iconGithub} alt="GitHub" className="header_option_icon"/>
                 </a>
-                <a href="https://github.com/jhonatandzg" className="header_option">
-        <img src={iconLinkedin} alt="GitHub" className="header_option_icon"/>
+                <a href="https://www.linkedin.com/in/jhonatan-zuñiga/" className="header_option">
+        <img src={iconLinkedin} alt="LinkedIn" className="header_option_icon"/>
                 </a>
                 </div>
           
             </div>
-
-
-        </div>
+        </header>
     )
 }

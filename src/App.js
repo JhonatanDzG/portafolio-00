@@ -1,14 +1,27 @@
-import './App.css';
-import Header from "./components/header/Header";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
+import './App.css';
+
+import NavBar from './components/navBar/NavBar';
+
+import Home from './view/home/Home';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Header/>
-      </header>
+    <Router>
+    <div className="app">
+    <NavBar/>
+
+    <div className='app_container'>
+
+    <Routes>
+      <Route exact path='/' Component={Home}/>
+    </Routes>
     </div>
+    </div>
+    </Router>
+
   );
 }
 
-export default App;
+
