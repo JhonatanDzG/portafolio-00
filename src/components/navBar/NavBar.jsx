@@ -16,9 +16,9 @@ export default function Header () {
             </div>
             <div className="header_nav">
                 <div className="header_options">
-                <a href="#about" className="header_option">About</a>
-                <a href="#projects" className="header_option">Projects</a>
-                <a href="#contact" className="header_option">Contact</a>
+                <a href="about" className="header_option">About</a>
+                <a href="projects" className="header_option">Projects</a>
+                <a href="contact" className="header_option">Contact</a>
                 <a href="https://github.com/jhonatandzg" className="header_option">
         <img src={iconGithub} alt="GitHub" className="header_option_icon"/>
                 </a>
